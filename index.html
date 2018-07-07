@@ -1,0 +1,70 @@
+<html>
+   <head>
+      <title>
+         7 Segment to Decimal Parser :: Rahul Shaw
+      </title>
+      <link rel="stylesheet" type="text/css" href="vendors/bootstrap.css">
+      <style type="text/css">
+         body{
+            background: #eee;
+         }
+         .panel{
+            border:1px solid transparent;
+         }
+      </style>
+   </head>
+   
+   <body ng-app = "app">
+      <div class="container" ng-controller = "myCtrl">
+         <div class="row">
+            <div class="col-md-12">
+               <h3>
+                  Tech Stack
+               </h3>
+               <p>
+                 <b> Angular Js 1.x, Bootstrap, Express Js, Node Js FS, Multer, Parse Algo </b>
+               </p>
+            </div>
+            <div class="col-md-4">
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                     7 Segment to Decimal Parser
+                  </div>
+                  <div class="panel-body">
+                     <form>
+                        <div class="form-group">
+                           <input type = "file" file-model = "myFile"/>
+                        </div>
+                        <div class="form-group">
+                           <button ng-click = "uploadFile()">upload me</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                     Parsed Output
+                  </div>
+                  <div class="panel-body">
+                     <p ng-repeat="item in output">
+                        {{item}}
+                        <hr>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>	   
+      
+      <script src="vendors/jquery.js"></script>   
+      <script src="vendors/bootstrap.js"></script>   
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="scripts/app.js"></script>   
+      <script src="scripts/routes.js"></script>   
+      <script src="scripts/controllers.js"></script>   
+      <script src="scripts/services.js"></script>   
+      <script src="scripts/directives.js"></script>   
+   </body>
+</html>
